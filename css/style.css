@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+.todo {
+    width: 386px;
+    height: 340px;
+    margin: 30px auto 0;
+    border: 1px solid #000;
+    padding: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, .8);
+    overflow: auto;
+}
+.todo::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* common style */
+.todo-common-list {
+    
+}
+.todo-common-list>li {
+    padding-left: 20px;
+    position: relative;
+    line-height: 2.2em;
+    font-size: 16px;
+}
+.todo-common-list>li:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    margin-top: 9px;
+}
+.todo-common-list>li .item_name {
+    float: left;
+} 
+.todo-common-list>li .item_operation {
+    float: right;
+    display: none;
+}
+.todo-common-list>li:hover .item_operation {
+    display: block;
+}
+.todo-common-operation_button {
+    display: inline-block;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.todo-common-list>li .item_operation .placetop {
+    background: #44aeee;
+}
+.todo-common-list>li .item_operation .done {
+    background: #6ce872;
+}
+.todo-common-list>li .item_operation .delete {
+    background: #fc5e5e;
+}
+.todo-common-list>li .item_operation .undo {
+    background: #33a144;
+}
+
+
+/* header */
+.todo-header {
+
+}
+.todo-header-current_state {
+    padding-right: 10px;
+    font-size: 34px;
+}
+.todo-header-next_state {
+    padding: 0 5px;
+    color: #ccc;
+    font-size: 24px;
+}
+
+/* 待办  todo*/
+.todo_list-todo {
+    margin-top: 10px;
+}
+.todo_list-todo-item.top {
+    color: #fc5e5e;
+}
+.todo_list-todo-item.top:before {
+    background: #fc5e5e;
+}
+
+/* 已完成 done */
+.todo_list-done {
+    margin-top: 10px; 
+    /*display: none;*/
+}
+
+.todo-input {
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+}
+.todo-input input {
+    width: 100%;
+    color: #fff;
+    line-height: 2.2em;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline-color: transparent;
+}
+.todo-input .dot {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    /* margin-top: 9px; */
+}
+.todo-input>input:focus+.dot{
+    display: block;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Document</title>
+	<script src="./js/selector.js"></script>
+	<script src="./js/tools.js"></script>
+</head>
+<body>
+	<!-- 
+		todo便笺:
+		1. 用户可以添加 待办事项
+		2. 切换 待办/已完成
+		3. 操作:添加 置顶 标记已完成 删除
+	 -->
+	<div class="todo" id="todo">
+		<div class="todo-header">
+			<span class="todo-header-current_state">ToDo</span>
+			<span class="todo-header-next_state" id="#tabstate">Done</span>
+		</div>
+		<div class="todo-body">
+			<!-- 待办 -->
+			<ul class="todo_list-todo todo-common-list">
+				<!-- <li class="todo_list-todo-item cf">
+					<span class="item_name">起床</span>
+					<div class="item_operation">
+						<span class="placetop todo-common-operation_button">▲</span>
+						<span class="done todo-common-operation_button">√</span>
+						<span class="delete todo-common-operation_button">-</span>
+					</div>
+				</li> -->
+			</ul>
+			<div class="todo-input">
+				<input type="input"></input>
+				<span class="dot"></span>
+			</div>
+			<!-- 已完成 -->
+			<ul class="todo_list-done">
+				<!-- <li class="todo_list-done-item">
+					<time datetime="星期三2018-12-12" class="listdone-item-time">星期三2018-12-12</time>
+					<ul class="listdone todo-common-list">
+						<li class="listdone-item cf">
+							<span class="item_name">吃饭</span>
+							<div class="item_operation">
+								<span class="undo todo-common-operation_button">◀</span>
+								<span class="delete todo-common-operation_button">-</span>
+							</div>
+						</li>
+					</ul>
+				</li> -->
+			</ul>
+		</div>
+	</div>
+	<script src="./js/todo.js"></script>
+</body>
+</html>
